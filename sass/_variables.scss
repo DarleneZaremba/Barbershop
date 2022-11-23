@@ -1,0 +1,43 @@
+
+// Palitra
+
+$main-text-color:#555555;
+$secondary-text-color:#9DA4BD;
+$accent-color:#FF6C00;
+$title-color:#303030;
+$white-color:#FFFFFF;
+
+
+
+
+.body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color:$main-text-color;
+}
+
+
+.container{
+margin-right: auto;
+margin-left: auto;
+padding: 0 15px;
+
+@media (min-width:480px) {
+    width: 418px;
+
+}
+@media (min-width:768px) {
+    width: 690px;
+}
+
+    @media (min-width:1199px) {
+        width: 1230px;
+
+    }
+
+}
+
+
+
+
+
