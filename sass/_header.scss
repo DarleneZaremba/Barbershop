@@ -1,0 +1,50 @@
+.header{
+    height: 100%;
+    background-color: rgb(116, 125, 125);
+}
+
+.header__flex{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 100px;
+}
+
+
+.nav{
+    display: flex;
+}
+
+.nav__item:not(:last-child){
+margin-right: 30px;
+}
+
+
+
+
+.nav-link{
+
+font-weight: 600;
+font-size: 12px;
+line-height: calc(16 / 12);
+letter-spacing: 0.1em;
+
+color: $white-color;
+}
+
+.header__block{
+     display: flex;
+     align-items: center;
+    margin-left: auto;
+}
+
+.header__phone{
+font-weight: 600;
+font-size: 12px;
+line-height: calc(16 / 12);
+letter-spacing: 0.1em;
+color: $white-color;
+margin-right: 40px;
+}

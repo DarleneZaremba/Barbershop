@@ -1,0 +1,63 @@
+.barbers__pre-title{
+  
+    font-weight: 600;
+    
+    font-size: 11px;
+    
+    line-height: calc(15 / 11);
+    
+    text-transform: uppercase;
+    
+    color: #303030
+    
+    }
+    
+     
+    
+    .barbers__title{
+    
+      font-family: 'Raleway';
+    
+    font-weight: 700;
+    
+    font-size: 42px;
+    
+    line-height: calc(49 / 42);
+    
+    letter-spacing: 0.05em;
+    
+     
+    
+    color: #303030
+    
+    }
+    
+     
+    
+    .barbers__name{
+    
+      font-size: 18px;
+    
+      line-height: calc(25 / 18);
+    
+      letter-spacing: 0.02em;
+    
+      color: #303030;
+    
+    }
+    
+     
+    
+    .barbers__position{
+    
+      line-height: calc(19 / 14);
+    
+      letter-spacing: 0.02em;
+    
+     
+    
+      color:$accent-color;
+    
+     
+    
+    }

@@ -1,0 +1,145 @@
+.contacts{
+  
+    background-image: url(../images/contacts/mobile.jpg);
+  
+   
+  
+    @media (min-device-pixel-ratio: 2),
+  
+    (min-resolution: 192dpi),
+  
+    (min-resolution: 2dppx) {
+  
+        background-image:url(../images/contacts/mobile@2x.jpg) ;
+  
+    }
+  
+   
+  
+  @media (min-width:768px) {
+  
+    background-image: url(../images/contacts/tablet.jpg);
+  
+   
+  
+    @media (min-device-pixel-ratio: 2),
+  
+    (min-resolution: 192dpi),
+  
+    (min-resolution: 2dppx) {
+  
+        background-image:url(../images/contacts/tablet@2x.jpg) ;
+  
+    }
+  
+  }
+  
+   
+  
+  @media (min-width:768px) {
+  
+    background-image: url(../images/contacts/desktop.jpg);
+  
+   
+  
+    @media (min-device-pixel-ratio: 2),
+  
+    (min-resolution: 192dpi),
+  
+    (min-resolution: 2dppx) {
+  
+        background-image:url(../images/contacts/desktop@2x.jpg) ;
+  
+    }
+  
+  }
+  
+   
+  
+  }
+  
+   
+  
+  .contacts-title{
+  
+    font-family: 'Raleway';
+  
+  font-weight: 700;
+  
+  font-size: 42px;
+  
+  line-height: calc(49 / 42);
+  
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  }
+  
+   
+  
+  .contacts__link{
+  
+    font-size: 18px;
+  
+  line-height: calc(30 / 18);
+  
+   
+  
+  letter-spacing: 0.02em;
+  
+   
+  
+  color: #9DA4BD;
+  
+  }
+  
+   
+  
+  .contact__link--first{
+  
+   
+  
+  font-weight: 700;
+  
+  font-size: 18px;
+  
+  line-height: calc(30 / 18);
+  
+  letter-spacing: 0.02em;
+  
+  color: #9DA4BD;
+  
+  }
+  
+   
+  
+  .contacts__schedule{
+  
+    font-weight: 600;
+  
+  font-size: 11px;
+  
+  line-height: 15px;
+  
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  }
+  
+   
+  
+  .contacts__working-hours{
+  
+    font-size: 18px;
+  
+    line-height: calc(30 / 18);
+  
+    letter-spacing: 0.02em;
+  
+    color: #9DA4BD;
+  
+  }
+  
+  
