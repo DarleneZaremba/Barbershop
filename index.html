@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/main.min.css">
@@ -23,7 +23,7 @@
 <!-- HEADER -->
 
 
-    <header class="header">
+    <!-- <header class="header">
 
         <div class="container header__flex">
 
@@ -64,7 +64,7 @@
 
     </div>
 
-    </header>
+    </header> -->
 
     <main>
 
@@ -113,34 +113,36 @@
    
 
  
+<div class="about__img-wrap">
+    <picture class="about__img">
 
-        <picture class="about__img">
+        <source srcset="./images/about/desktop1.jpg 1x, ./images/about/desktop1@2x.jpg 2x" media="(min-width:1200px)">
+        <source srcset="./images/about/tablet1.jpg 1x, ./images/about/tablet1@2x.jpg 2x" media="(min-width:768px)">
+        <img src="./images/about/tablet1.jpg" alt=" man who is getting his beard trimmed"  >
 
-            <source srcset="./images/about/desktop1.jpg 1x, ./images/about/desktop1@2x.jpg 2x" media="(min-width:1200px)">
-            <source srcset="./images/about/tablet1.jpg 1x, ./images/about/tablet1@2x.jpg 2x" media="(max-width:1199px)">
-            <img src="./images/about/tablet1.jpg" alt=" man who is getting his beard trimmed"  width="270">
+       
 
-           
+    </picture>
 
-        </picture>
 
- 
 
-        <picture class="about__img">
+    <picture class="about__img">
 
-            <source srcset="./images/about/desktop2.jpg 1x, ./images/about/desktop2@2x.jpg 2x" media="(min-width:1200px)">
+        <source srcset="./images/about/desktop2.jpg 1x, ./images/about/desktop2@2x.jpg 2x" media="(min-width:1200px)">
 
-            <source srcset="./images/about/tablet2.jpg 1x, ./images/about/tablet2@2x.jpg 2x" media="(max-width:1199px)">
+        <source srcset="./images/about/tablet2.jpg 1x, ./images/about/tablet2@2x.jpg 2x" media="(min-width:768px)">
 
-            
+        
 
- 
 
-            <img src="./images/about/tablet1.jpg" alt="man who is getting his beard trimmed" width="270">
 
- 
+        <img src="./images/about/tablet2.jpg" alt="man who is getting his beard trimmed" >
 
-        </picture>
+
+
+    </picture>
+</div>
+
 
        
 <div class="about-content-wrap">
@@ -152,7 +154,7 @@
 
           If you want to add more confidence to your image, you should
 
-          definitely visit us.
+           visit us.
 
         </p>
 
@@ -188,9 +190,9 @@
 
  
 
+<section class="services">
 <div class="container">
 
-    <section class="services">
 
         <p class="services__pre-title">
 
@@ -204,7 +206,9 @@
 
         </h2>
 
-   
+   <div class="services__wrap">
+
+ 
 
         <ul class="services-price-list">
 
@@ -277,12 +281,13 @@
             </li>
 
          </ul>
+        </div>
 
-         <button type="button" class=" main-btn booking-btn">ONLINE-BOOKING</button>
-
+         <button type="button" class=" main-btn booking-btn services-btn">ONLINE-BOOKING</button>
+        </div>
     </section>
 
-</div>
+
 
 
 
@@ -293,19 +298,48 @@
 
  
 
-<div class="container">
 
     <section class="advantages">
+
+  
+
+        <div class="container advantages__flex-container">
+   
+
+   
+<div class="advantages__content">
+
+
+        <p class="advantages__pre-title">
+
+            Old traditional school
+
+        </p>
+
+        <h2 class="advantages__title">
+
+            ¿Why people come to us?
+
+        </h2>
+
+        <p class="advantages__after-title">
+
+            Only good things are said about us. But it's better to see and feel 1 time than read 10 times.
+
+        </p>
+    </div>
+
 
         <ul class="advantages__list">
 
             <li class="advantages-item">
 
- 
+    <span class="advantages-number">600</span>
 
-                <span class="advantages-number">600</span>
+    <p class="advantages-text">Satisfied customers per day</p>
 
-                <p class="advantages-text">Satisfied customers per day</p>
+
+               
 
             </li>
 
@@ -336,41 +370,20 @@
             </li>
 
         </ul>
-
-   
-
-   
-
-        <p class="advantages__pre-title">
-
-            Old traditional school
-
-        </p>
-
-        <h2 class="advantages__title">
-
-            ¿Why people come to us?
-
-        </h2>
-
-        <p class="advantages__after-title">
-
-            Only good things are said about us. But it's better to see and feel 1 time than read 10 times.
-
-        </p>
+        
+</div>
 
     </section>
 
-</div>
 
  
 
 <!-- BARBERS -->
 
-<div class="container">
 
     <section class="barbers">
 
+        <div class="container">
         <p class="barbers__pre-title">For true enjoyers of the atmosphere</p>
 
         <h2 class="barbers__title">
@@ -391,9 +404,9 @@
 
                     <source srcset="./images/barbers/desktop1.jpg 1x, ./images/barbers/desktop1@2x.jpg 2x" media="(min-width:1200px)">
 
-                    <source srcset="./images/barbers/tablet1.jpg 1x, ./images/barbers/tablet1@2x.jpg 2x" media="(max-width:1199px)">
+                    <source srcset="./images/barbers/tablet1.jpg 1x, ./images/barbers/tablet1@2x.jpg 2x" media="(min-width:768px)">
 
-                    <source srcset="./images/barbers/mobile1.jpg 1x, ./images/barbers/mobile1@2x.jpg 2x" media="(max-width:768px)">
+                    <source srcset="./images/barbers/mobile1.jpg 1x, ./images/barbers/mobile1@2x.jpg 2x" media="(max-width:767px)">
 
        
 
@@ -402,10 +415,43 @@
                 </picture>
 
  
-
+             <div class="barbers__list-content">
                 <p class="barbers__name">John Smith</p>
 
                 <p class="barbers__position">Extreme Barber</p>
+
+             </div>
+               
+                <ul class="social-icon-list">
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-instagram" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-twitter" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-facebook" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-linkedin" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
 
    
 
@@ -415,19 +461,6 @@
 
    
 
-                <ul class="social-list">
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                </ul>
-
-            </li>
 
  
 
@@ -439,9 +472,9 @@
 
                     <source srcset="./images/barbers/desktop2.jpg 1x, ./images/barbers/desktop2@2x.jpg 2x" media="(min-width:1200px)">
 
-                    <source srcset="./images/barbers/tablet2.jpg 1x, ./images/barbers/tablet2@2x.jpg 2x" media="(max-width:1199px)">
+                    <source srcset="./images/barbers/tablet2.jpg 1x, ./images/barbers/tablet2@2x.jpg 2x" media="(min-width:768px)">
 
-                    <source srcset="./images/barbers/mobile2.jpg 1x, ./images/barbers/mobile2@2x.jpg 2x" media="(max-width:768px)">
+                    <source srcset="./images/barbers/mobile2.jpg 1x, ./images/barbers/mobile2@2x.jpg 2x" media="(max-width:767px)">
 
        
 
@@ -450,29 +483,49 @@
                 </picture>
 
  
+<div class="barbers__list-content">
+    <p class="barbers__name">Michele Doe</p>
 
-                <p class="barbers__name">Michele Doe</p>
+    <p class="barbers__position">Extreme Barber</p>
 
-                <p class="barbers__position">Extreme Barber</p>
 
-   
+</div>
+               
 
                
 
                 <!-- social media -->
 
                
-
-                <ul class="social-list">
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
+                <ul class="social-icon-list">
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-instagram" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-twitter" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-facebook" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-linkedin" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
 
             </li>
@@ -485,9 +538,9 @@
 
                     <source srcset="./images/barbers/desktop3.jpg 1x, ./images/barbers/desktop3@2x.jpg 2x" media="(min-width:1200px)">
 
-                    <source srcset="./images/barbers/tablet3.jpg 1x, ./images/barbers/tablet3@2x.jpg 2x" media="(max-width:1199px)">
+                    <source srcset="./images/barbers/tablet3.jpg 1x, ./images/barbers/tablet3@2x.jpg 2x" media="(min-width:768px)">
 
-                    <source srcset="./images/barbers/mobile3.jpg 1x, ./images/barbers/mobile3@2x.jpg 2x" media="(max-width:768px)">
+                    <source srcset="./images/barbers/mobile3.jpg 1x, ./images/barbers/mobile3@2x.jpg 2x" media="(max-width:767px)">
 
        
 
@@ -496,11 +549,13 @@
                 </picture>
 
  
+<div class="barbers__list-content">
+    <p class="barbers__name">Alan Black</p>
 
-                <p class="barbers__name">Alan Black</p>
+    <p class="barbers__position">Extreme Barber</p>
 
-                <p class="barbers__position">Extreme Barber</p>
-
+</div>
+               
    
 
                
@@ -509,109 +564,136 @@
 
                
 
-                <ul class="social-list">
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
-                    <li class="social-list__item"><a href=""></a></li>
-
+                <ul class="social-icon-list">
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-instagram" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-twitter" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-facebook" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-list-item">
+                        <a href="" class="social-icon-list-link">
+                            <svg class="icon icon-linkedin" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
 
             </li>
 
         </ul>
 
-    </section>
+
 
 </div>
 
- 
+</section>
 
 <!-- gallery -->
 
 
 
 
-<div class="container">
+
 
     <section class="gallery">
-
+        <div class="container">
         <p class="gallery__pre-title">
 
             In Latin, "barba" means "beard"
 
         </p>
 
- 
+ <ul class="gallery-list">
+    <li class="gallery-list__item">
+          <picture>
 
-        <picture>
+        <source srcset="./images/gallery/desktop1.jpg 1x, ./images/gallery/desktop1@2x.jpg 2x" media="(min-width:1200px)">
 
-            <source srcset="./images/gallery/desktop1.jpg 1x, ./images/gallery/desktop1@2x.jpg 2x" media="(min-width:1200px)">
+        <source srcset="./images/gallery/tablet1.jpg 1x, ./images/gallery/tablet1@2x.jpg 2x" media="(min-width:768px)">
 
-            <source srcset="./images/gallery/tablet1.jpg 1x, ./images/gallery/tablet1@2x.jpg 2x" media="(max-width:1199px)">
+        <source srcset="./images/gallery/mobile1.jpg 1x ./images/gallery/mobile1@2x.jpg 2x" media="(max-width:767px)">
 
-            <source srcset="./images/gallery/mobile1.jpg 1x, ./images/gallery/mobile1@2x.jpg 2x" media="(max-width:768px)">
 
- 
 
-            <img src="./images/gallery/mobile1.jpg" alt="Alan Black" class="gallery__img">
+        <img src="./images/gallery/mobile1.jpg" alt="Alan Black" class="gallery__img" >
 
-        </picture>
+    </picture></li>
+    <li class="gallery-list__item"> <picture>
 
-        <picture>
+        <source srcset="./images/gallery/desktop2.jpg 1x, ./images/gallery/desktop2@2x.jpg 2x" media="(min-width:1200px)">
 
-            <source srcset="./images/gallery/desktop2.jpg 1x, ./images/gallery/desktop2@2x.jpg 2x" media="(min-width:1200px)">
+        <source srcset="./images/gallery/tablet2.jpg 1x, ./images/gallery/tablet2@2x.jpg 2x" media="(min-width:768px)">
 
-            <source srcset="./images/gallery/tablet2.jpg 1x, ./images/gallery/tablet2@2x.jpg 2x" media="(max-width:1199px)">
+        <source srcset="./images/gallery/mobile2.jpg 1x, ./images/gallery/mobile2@2x.jpg 2x" media="(max-width:767px)">
 
-            <source srcset="./images/gallery/mobile2.jpg 1x, ./images/gallery/mobile2@2x.jpg 2x" media="(max-width:768px)">
 
- 
 
-            <img src="./images/gallery/mobile2.jpg" alt="Alan Black" class="gallery__img">
+        <img src="./images/gallery/mobile2.jpg" alt="Alan Black" class="gallery__img">
 
-        </picture>
-
+    </picture></li>
+    <li class="gallery-list__item">
         <picture>
 
             <source srcset="./images/gallery/desktop3.jpg 1x, ./images/gallery/desktop3@2x.jpg 2x" media="(min-width:1200px)">
 
-            <source srcset="./images/gallery/tablet3.jpg 1x, ./images/gallery/tablet3@2x.jpg 2x" media="(max-width:1199px)">
+            <source srcset="./images/gallery/tablet3.jpg 1x, ./images/gallery/tablet3@2x.jpg 2x"  media="(min-width:768px)">
 
-            <source srcset="./images/gallery/mobile3.jpg 1x, ./images/gallery/mobile3@2x.jpg 2x" media="(max-width:768px)">
+            <source srcset="./images/gallery/mobile3.jpg 1x, ./images/gallery/mobile3@2x.jpg 2x" media="(max-width:767px)">
 
  
 
             <img src="./images/gallery/mobile3.jpg" alt="Alan Black" class="gallery__img">
 
         </picture>
+    </li>
+    <li class="gallery-list__item"> <picture>
 
-        <picture>
+        <source srcset="./images/gallery/desktop4.jpg 1x, ./images/gallery/desktop4@2x.jpg 2x" media="(min-width:1200px)">
 
-            <source srcset="./images/gallery/desktop4.jpg 1x, ./images/gallery/desktop4@2x.jpg 2x" media="(min-width:1200px)">
+        <source srcset="./images/gallery/tablet4.jpg 1x, ./images/gallery/tablet4@2x.jpg 2x" media="(min-width:768px)">
 
-            <source srcset="./images/gallery/tablet4.jpg 1x, ./images/gallery/tablet4@2x.jpg 2x" media="(max-width:1199px)">
+        <source srcset="./images/gallery/mobile4.jpg 1x, ./images/gallery/mobile4@2x.jpg 2x" media="(max-width:767px)">
 
-            <source srcset="./images/gallery/mobile4.jpg 1x, ./images/gallery/mobile4@2x.jpg 2x" media="(max-width:768px)">
 
- 
 
-            <img src="./images/gallery/mobile4.jpg" alt="Alan Black" class="gallery__img">
+        <img src="./images/gallery/mobile4.jpg" alt="Alan Black" class="gallery__img">
 
-        </picture>
+    </picture></li>
+ </ul>
 
- 
+      
+
+       
+
+      
+
+       
+
+    </div>
 
     </section>
 
-</div>
+
 
  
-
+<!-- 
 <div class="contacts-booking">
 
     <section class="booking">
@@ -694,11 +776,11 @@
 
     </section>
 
-</div>
+</div> -->
 
  
 
-<div class="container">
+<!-- <div class="container">
 
     <footer class="footer">
 
@@ -712,7 +794,7 @@
 
     </footer>
 
-</div>
+</div> -->
 
  
 

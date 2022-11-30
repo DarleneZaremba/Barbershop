@@ -10,6 +10,43 @@
     
     text-transform: uppercase;
     
-    color: #303030
-    
+    color: #303030;
+    margin-bottom: 44px;
     }
+    .gallery__pre-title::before{
+        content:'';
+        display: inline-block;
+        height: 1px;
+        width: 60px;
+        background-color: $main-text-color;
+        margin-right: 20px;
+        vertical-align: middle;
+        } 
+
+
+        .gallery-list__item{
+            @media screen and (max-width:767px) {
+              width: 418px;
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (min-width:1200px) {
+                &:not(:last-child){
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .gallery-list{
+            @media screen and (min-width:768px) and (max-width:1199px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            @media screen and (min-width:1200px) {
+                display: flex;
+            }
+        }
