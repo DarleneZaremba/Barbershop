@@ -1,15 +1,36 @@
 .header{
-    height: 100%;
-    background-color: rgb(116, 125, 125);
+    
+        padding: 32px 0;
+        position: absolute;
+        padding-right: 20px;
+         width: 100%;
+        
+
 }
 
 .header__flex{
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        
+        display: flex;
+        align-items: center;
+    }
+ 
+  
 }
 
 .logo{
-    margin-right: 100px;
+display: inline-block;
+
+
+
+    @media screen and (min-width:1200px) {
+        
+        margin-right: 120px;
+    }
+    @media (min-width:768px) {
+        margin-right: 60px;
+    }
 }
 
 
@@ -18,9 +39,24 @@
 }
 
 .nav__item:not(:last-child){
-margin-right: 30px;
+    @media (min-width:1200px) {
+        
+        margin-right: 30px;
+    }
+    @media (min-width:768px) {
+        margin-right: 16px;
+    }
 }
 
+
+.logo-icon{
+    transition: fill 200ms linear;
+}
+
+.logo-icon:hover,
+.logo-icon:focus{
+    fill: $accent-color;
+}
 
 
 
@@ -32,12 +68,28 @@ line-height: calc(16 / 12);
 letter-spacing: 0.1em;
 
 color: $white-color;
+transition: color 200ms linear;
+
+.nav__item:hover &
+{
+    color: $accent-color;
+}
+
+&:focus{
+    color: $accent-color;
+}
+
 }
 
 .header__block{
-     display: flex;
+
+    @media (min-width:1200px) {
+        display: flex;
      align-items: center;
-    margin-left: auto;
+    margin-left: auto;   
+    }
+  
+  
 }
 
 .header__phone{
@@ -47,4 +99,10 @@ line-height: calc(16 / 12);
 letter-spacing: 0.1em;
 color: $white-color;
 margin-right: 40px;
+transition: color 200ms linear;
+
+&:hover,
+&:focus{
+    color: $accent-color;
+}
 }

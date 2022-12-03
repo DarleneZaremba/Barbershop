@@ -1,6 +1,11 @@
+
 .contacts{
-  
-    background-image: url(../images/contacts/mobile.jpg);
+  background-color: #191C26;
+    background-image: url(../images/contacts/mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 31px;
+    padding-right: 31px;
   
    
   
@@ -10,15 +15,24 @@
   
     (min-resolution: 2dppx) {
   
-        background-image:url(../images/contacts/mobile@2x.jpg) ;
+        background-image:url(../images/contacts/mobile@2x.png) ;
   
+    }
+
+    @media screen and (max-width:767px) {
+      padding-left: 31px;
     }
   
    
   
   @media (min-width:768px) {
   
-    background-image: url(../images/contacts/tablet.jpg);
+    background-image: url(../images/contacts/tablet.png);
+
+      padding-left: 39px;
+      padding-right: 39px;
+   
+
   
    
   
@@ -28,7 +42,7 @@
   
     (min-resolution: 2dppx) {
   
-        background-image:url(../images/contacts/tablet@2x.jpg) ;
+        background-image:url(../images/contacts/tablet@2x.png) ;
   
     }
   
@@ -36,9 +50,11 @@
   
    
   
-  @media (min-width:768px) {
+  @media (min-width:1200px) {
   
-    background-image: url(../images/contacts/desktop.jpg);
+    background-image: url(../images/contacts/desktop.png);
+    width: 50%;
+    padding-left: 100px;
   
    
   
@@ -48,7 +64,7 @@
   
     (min-resolution: 2dppx) {
   
-        background-image:url(../images/contacts/desktop@2x.jpg) ;
+        background-image:url(../images/contacts/desktop@2x.png) ;
   
     }
   
@@ -61,6 +77,7 @@
    
   
   .contacts-title{
+
   
     font-family: 'Raleway';
   
@@ -73,34 +90,52 @@
   letter-spacing: 0.05em;
   
   color: #FFFFFF;
+  margin-bottom: 40px;
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+  }
   
   }
   
    
   
-  .contacts__link{
+  .contacts-address__text{
   
     font-size: 18px;
   
   line-height: calc(30 / 18);
-  
-   
-  
+ 
   letter-spacing: 0.02em;
-  
-   
-  
+ 
   color: #9DA4BD;
-  
+
+transition: color 200ms linear;
+
+
+.contact__item:hover &, 
+.contact__item:focus &{
+
+  color: $accent-color;
+}
+
+
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    width: 330px;
+    margin-right: 30px;
   }
   
+  }
+
+
+  
+   
+  .contacts-address--text {
+  
+    font-weight: 700;
    
   
-  .contact__link--first{
-  
-   
-  
-  font-weight: 700;
   
   font-size: 18px;
   
@@ -125,6 +160,7 @@
   text-transform: uppercase;
   
   color: #FFFFFF;
+  margin-bottom: 20px;
   
   }
   
@@ -142,4 +178,68 @@
   
   }
   
+  
+  .contacts__list{
+    @media screen and (min-width:1200px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  .contacts-address__icon{
+margin-right: 16px;
+  fill: #9da4bd;
+transition: fill 200ms linear;
+
+.contact__item:hover &
+{
+  fill: $accent-color;
+}
+  }
+
+  .contacts__link{
+    display: flex;
+    align-items: center;
+
+  }
+
+  
+
+  .contact__item:not(:last-child){
+
+
+      
+      margin-bottom: 20px;
+    
+  }
+
+  .contact__item:last-child{
+    margin-bottom: 53px;
+  }
+
+
+ 
+  .contacts__schedule::before{
+    content:'';
+    display: inline-block;
+    height: 1px;
+    width: 60px;
+    background-color: $main-text-color;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+
+
+
+
+  .contacts__flex-wrap{
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      display: flex;
+    }
+  }
+
+
+
+
+
+
   

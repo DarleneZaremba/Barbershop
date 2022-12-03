@@ -3,6 +3,7 @@
   background-color:  #F7F7F7;
 
 
+
 }
 
 
@@ -111,15 +112,25 @@ justify-content: center;
 }
   
 
+
 .social-icon-list-item:not(:last-child){
   margin-right: 10px;
 }
 
+
+
 .icon{
+
+transition: fill 200ms linear;
 
   .social-icon-list-item:hover &{
     fill: $accent-color;
   }
+}
+
+
+.social-icon-list-link:focus{
+  fill:$accent-color;
 }
 
 

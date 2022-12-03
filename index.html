@@ -23,7 +23,7 @@
 <!-- HEADER -->
 
 
-    <!-- <header class="header">
+<header class="header">
 
         <div class="container header__flex">
 
@@ -64,7 +64,7 @@
 
     </div>
 
-    </header> -->
+    </header> 
 
     <main>
 
@@ -74,14 +74,16 @@
 <section class="hero">
         <div class="container hero__flex">
 
-
+<div class="hero__social-wrapper">
                 <ul class="hero__social">
 
-                  <li><a href="" rel="noopener nofollow noreferrer" class="hero-link">Instagram</a></li>
+                  <li class="hero__list-item hero__list-item--pre"><a href="" rel="noopener nofollow noreferrer" class="hero-link">Instagram</a></li>
 
-                  <li><a href="" rel="noopener nofollow noreferrer" class="hero-link">Youtube</a></li>
+                  <li class="hero__list-item"><a href="" rel="noopener nofollow noreferrer" class="hero-link">Youtube</a></li>
 
                 </ul>
+
+            </div>
 <div class="hero__content">
     <p class="hero__pre-title">A hair salon for men in Kyiv</p>
 
@@ -332,7 +334,7 @@
 
         <ul class="advantages__list">
 
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--first">
 
     <span class="advantages-number">600</span>
 
@@ -343,7 +345,7 @@
 
             </li>
 
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--second">
 
                 <span class="advantages-number">50</span>
 
@@ -351,7 +353,7 @@
 
             </li>
 
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--third">
 
                 <span class="advantages-number">20</span>
 
@@ -361,7 +363,7 @@
 
             </li>
 
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--fourth">
 
                 <span class="advantages-number">100</span>
 
@@ -628,12 +630,11 @@
 
         <source srcset="./images/gallery/tablet1.jpg 1x, ./images/gallery/tablet1@2x.jpg 2x" media="(min-width:768px)">
 
-        <source srcset="./images/gallery/mobile1.jpg 1x ./images/gallery/mobile1@2x.jpg 2x" media="(max-width:767px)">
+        <source srcset="./images/gallery/mobile1.jpg 1x, ./images/gallery/mobile1@2x.jpg 2x" media="(max-width:767px)">
 
 
 
-        <img src="./images/gallery/mobile1.jpg" alt="Alan Black" class="gallery__img" >
-
+        <img src="./images/gallery/mobile1.jpg" alt="Alan Black" class="gallery__img">
     </picture></li>
     <li class="gallery-list__item"> <picture>
 
@@ -693,47 +694,50 @@
 
 
  
-<!-- 
-<div class="contacts-booking">
 
+<div class="contacts-booking "> 
+
+
+   <!-- BOOKING SECTIONS -->
+
+
+   <div class=" contacts-booking__flex">
     <section class="booking">
-
+   
         <h2 class="booking-title">Online-booking</h2>
 
    
 
         <form  class="booking-form">
 
-            <label class="booking-form__label" >Name
 
-                <input type="text" class="booking-form__input">
 
-            </label>
+    <input type="text" class=" booking-form__input booking-form__input-first" placeholder="NAME*">
 
-   
-
-            <label class="booking-form__label" > Phone
-
-                <input type="tel" class="booking-form__input">
-
-            </label>
 
    
 
-            <label class="booking-form__label" > Message
+          
 
-                <input type="text" class="booking-form__input">
 
-            </label>
+    <input type="tel" class="booking-form__input" placeholder="PHONE*">
 
-            <button class="main-btn booking-btn" type="submit">send</button>
+
+          
+
+   
+<textarea name="comment" placeholder="MESSAGE" class="booking-form__textarea"></textarea>
+
+
+
+            <button class="main-btn booking-btn booking-form__btn" type="submit">send</button>
 
         </form>
+  
+    </section> 
 
-    </section>
 
-   
-
+<!-- CONTACTS SECTION -->
     <section class="contacts">
 
    
@@ -745,22 +749,46 @@
         </h2>
 
    
+<div class="contacts__flex-wrap">
+
 
         <address class="contacts-address">
 
             <ul class="contacts__list">
 
-                <li class="contact__item"><a href=https://goo.gl/maps/89p51jthK1xaxgvP6 rel="noopener nofollow noreferree" class="contacts__link contact__link--first">st. Vasilkovaya, 7A
+                <li class="contact__item">
+                    
+                    <a href=https://goo.gl/maps/89p51jthK1xaxgvP6 rel="noopener nofollow noreferree" class="contacts__link">
+                        <svg class="contacts-address__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-map"></use>
+                        </svg>
+                         <span class="contacts-address__text contacts-address--text "> st. Vasilkovaya, 7A <br> Kiev, 08132</span>
 
-                    Kiev, 08132</a></li>
+                    </a></li>
 
-                <li class="contact__item"><a href=tel:+380441111111 class="contacts__link" >+38 044 111 11 11</a></li>
+                <li class="contact__item" >
+                    <a href=tel:+380441111111 class="contacts__link">
+                        <svg class="contacts-address__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        
+                      <span class="contacts-address__text"  >  +38 044 111 11 11</span></a></li>
 
-                <li class="contact__item"><a href=mailto:barbershop@email.com class="contacts__link" >barbershop@email.com</a></li>
+                <li  class="contact__item" >
+                    
+                    <a href=mailto:barbershop@email.com class="contacts__link" >
+                        <svg class="contacts-address__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                      <span  class="contacts-address__text" >  barbershop@email.com </span></a></li>
 
             </ul>
 
         </address>
+
+<div class="contacts__schedule-wrap">
+
+
 
         <p class="contacts__schedule">
 
@@ -773,32 +801,157 @@
             Every day from 9:00 to 22:00
 
         </p>
+    </div>
 
-    </section>
 
-</div> -->
+</section>
+</div>
 
+</div> 
+
+
+
+<!-- MOBILE DESKTOP -->
+
+<!-- <div class="contacts-booking-desk  contacts-booking-desk__flex">  -->
+
+
+    <!-- BOOKING SECTIONS -->
+  
+     <!-- <section class="booking">
+         
+         <h2 class="booking-title">Online-booking</h2>
+ 
+ 
+ 
+     <input type="text" class=" booking-form__input booking-form__input-first" placeholder="NAME*">
+ 
+ 
+    
+ 
+           
+ 
+ 
+     <input type="tel" class="booking-form__input" placeholder="PHONE*">
+ 
+ 
+           
+ 
+    
+ <textarea name="comment" placeholder="MESSAGE" class="booking-form__textarea"></textarea>
+ 
+ 
+ 
+             <button class="main-btn booking-btn booking-form__btn" type="submit">send</button>
+ 
+    
+     </section> 
+  -->
+ 
+ <!-- CONTACTS SECTION -->
+     <!-- <section class="contacts">
+
+    
+ 
+         <h2 class="contacts-title">
+ 
+             Contacts
+ 
+         </h2>
+ 
+    
+ <div class="contacts__flex-wrap">
+ 
+ 
+         <address class="contacts-address">
+ 
+             <ul class="contacts__list">
+ 
+                 <li class="contact__item">
+                     
+                     <a href=https://goo.gl/maps/89p51jthK1xaxgvP6 rel="noopener nofollow noreferree" class="contacts__link">
+                         <svg class="contacts-address__icon" width="24" height="24">
+                             <use href="./images/symbol-defs.svg#icon-map"></use>
+                         </svg>
+                          <span class="contacts-address__text contacts-address--text "> st. Vasilkovaya, 7A <br> Kiev, 08132</span>
+ 
+                     </a></li>
+ 
+                 <li class="contact__item" >
+                     <a href=tel:+380441111111 class="contacts__link">
+                         <svg class="contacts-address__icon" width="24" height="24">
+                             <use href="./images/symbol-defs.svg#icon-phone"></use>
+                         </svg>
+                         
+                       <span class="contacts-address__text"  >  +38 044 111 11 11</span></a></li>
+ 
+                 <li  class="contact__item" >
+                     
+                     <a href=mailto:barbershop@email.com class="contacts__link" >
+                         <svg class="contacts-address__icon" width="24" height="24">
+                             <use href="./images/symbol-defs.svg#icon-mail"></use>
+                         </svg>
+                       <span  class="contacts-address__text" >  barbershop@email.com </span></a></li>
+ 
+             </ul>
+ 
+         </address>
+ 
+ <div class="contacts__schedule-wrap">
+ 
+ 
+ 
+         <p class="contacts__schedule">
+ 
+             working hours
+ 
+         </p>
+ 
+         <p class="contacts__working-hours">
+ 
+             Every day from 9:00 to 22:00
+ 
+         </p>
+     </div>
+ 
+ </div>
+ 
+    
+     </section>
+    </div>  -->
+ 
+ 
+</main>
  
 
-<!-- <div class="container">
+<!-- FOOTER -->
 
-    <footer class="footer">
+ <footer class="footer">
+        <div class="container footer__flex">
+
+            <div class="footer__copyright">
+
+                <svg class="footer__icon" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-copy"></use>
+                </svg>
+                <p class="footer__copyright-text">Copyright 2020</p>
+            </div>
+
 
         <ul class="footer-list">
 
-            <li class="footer-item"><a href=""  class="fotter-link" rel="noopener nofollow noreferree">Instagram</a></li>
+            <li class="footer-item"><a href=""  class="footer-link" rel="noopener nofollow noreferree">Instagram</a></li>
 
-            <li class="footer-item"><a href="" class="fotter-link" rel="noopener nofollow noreferree">Youtube</a></li>
+            <li class="footer-item"><a href="" class="footer-link" rel="noopener nofollow noreferree">Youtube</a></li>
 
         </ul>
 
+    </div> 
     </footer>
 
-</div> -->
 
  
 
-    </main>
 
   </body>
 

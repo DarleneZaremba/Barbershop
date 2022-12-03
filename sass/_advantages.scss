@@ -127,18 +127,17 @@
 
     }
 
-    .advantages-item{
+    .advantages__item{
       background-color: #F7F7F7;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 133px;
+    
+       height: 133px;
+      text-align: center;
       @media screen and (max-width:767px) {
-        width: 193px;
+        // width: 193px;
+        max-width: calc((100% - 30px) / 2);
       }
       @media screen and (min-width:768px) {
-        width: 211px;
+        
        
        
       }
@@ -148,12 +147,24 @@
       }
     }
 
-     .advantages-item:nth-child(even){
+     .advantages__item:nth-child(even){
        margin-top: 30px;
      }
 
-     .advantages-item:nth-child(odd){
+     .advantages__item:nth-child(odd){
        margin-right: 30px;
      }
     
-    
+    .advantages__item--first{
+padding: 20px 35px 20px 35px ;
+    }
+    .advantages__item--second{
+      padding: 20px 36px;
+    }
+    .advantages__item--third{
+      padding: 20px 54px 20px 55px;
+    }
+    .advantages__item--fourth{
+      padding: 20px 32px ;
+     
+    }

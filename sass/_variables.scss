@@ -24,6 +24,8 @@ body{
 
   @media screen and (min-width:480px) {
     width: 448px;
+   
+
   }
   @media screen and (min-width:768px) {
     width: 720px;
@@ -108,6 +110,7 @@ body{
         padding-top:84px;
     
         padding-bottom:84px;
+
     
       }
     
@@ -154,13 +157,28 @@ letter-spacing: 0.09em;
 text-transform: uppercase;
 background-color: transparent;
 font-family: inherit;
-    }
 
 
-    .booking-btn{
-        color: $white-color;
+transition: background-color 200ms linear, color 200ms linear;
+}
+
+
+.booking-btn{
+  color: $white-color;
+
+}
+
+%button-hover{
+  background-color:$accent-color;
+  color: $white-color;
+  cursor: pointer;
       }
 
+
+      .main-btn:hover,
+      .main-btn:focus{
+        @extend %button-hover
+      }
 
 
 
