@@ -3,13 +3,16 @@
 
 background-color: #191C26;
 
+
+
+
  }
  .contacts-booking__flex{
-    display: flex;
-
+display: flex;
     @media screen and (max-width:1199px) {
         flex-direction: column;
     }
+  
 
 
 }
@@ -17,15 +20,17 @@ background-color: #191C26;
 .booking{
     background-color: #191C26;
 
-     @media screen and ( min-width:1200px) {
-        padding-left: 215px;
-   padding-right: 30px;
-       
-     }
 
      @media screen and (min-width:768px) {
         padding-left: 39px;
         padding-right: 39px;
+     }
+
+     
+     @media screen and ( min-width:1200px) {
+        padding-left: 215px;
+   padding-right: 30px;
+       
      }
 
      @media (max-width:767px) {
