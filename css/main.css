@@ -776,6 +776,11 @@ img {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
 }
+@media (max-width: 379px) {
+  .services__pre-title {
+    font-size: 9px;
+  }
+}
 
 .services__pre-title::before {
   content: "";
