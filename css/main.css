@@ -179,6 +179,9 @@ img {
   height: 1px;
   margin-right: 40px;
   background: #303030;
+  position: absolute;
+  top: 10px;
+  left: -80px;
 }
 
 .hero__list-item:first-child {
@@ -991,7 +994,7 @@ img {
 }
 
 .advantages__item--third {
-  padding: 20px 54px 20px 55px;
+  padding: 20px 70px;
 }
 
 .advantages__item--fourth {
