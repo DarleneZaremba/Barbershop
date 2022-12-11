@@ -46,6 +46,12 @@ z-index: 100;
 }
 
 
+.header-btn{
+    @media (min-width:768px) {
+        color: $white-color;
+    }
+}
+
 .logo{
 
     fill: #fff;
@@ -121,7 +127,11 @@ fill: black;
 
 .navigation-list{
     display: flex;
-    flex-direction: column;
+    
+    @media (max-width:767px) {
+        
+        flex-direction: column;
+    }
 }
 
 
@@ -212,6 +222,7 @@ font-size: 12px;
   }
 
   .header-socials-list{
+    margin-top: 40px;
     @media (min-width:768px) {
         display: none;
     }
